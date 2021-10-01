@@ -42,7 +42,7 @@ These tests ensure that the updates derived in Algorithm 1 are correct. E.g. sin
 
 ## Datasets
 
-Where to download each of the datasets used in our paper.
+Where to download each of the datasets used in our paper. Note that each dataset should be included with `data/musk2.data` in the `data` folder.
 
  - **MUSK-2**: Downloaded from the UCI website: https://archive.ics.uci.edu/ml/datasets/Musk+(Version+2)
  - **Elephant, Fox, and Tiger**: Downloaded from: http://www.cs.columbia.edu/~andrews/mil/datasets.html
@@ -50,6 +50,29 @@ Where to download each of the datasets used in our paper.
  - **SIVAL**: Bags and labels are downloaded from: https://www.cs.wustl.edu/~sg/accio/SIVAL.html
    - If the link above doesn't work for some reason the dataset is mirrored at: https://drive.google.com/file/d/1CE7NBfOgE6l3oA-TVdWCQV3FEpZqLlt3/view?usp=sharing
    - If using the SIVAL dataset please cite: Rahmani, Rouhollah, et al. "Localized content based image retrieval." Proceedings of the 7th ACM SIGMM international workshop on Multimedia information retrieval. 2005.
+
+### SIVAL-deep Processing Pipeline
+
+1. Download the raw SIVAL data from above and put into the `data` folder.
+
+2. Get the pretrained edgebox model from [here](https://github.com/opencv/opencv_extra/blob/master/testdata/cv/ximgproc/model.yml.gz) and into the `data` folder using the following commands:
+
+```bash
+wget https://github.com/opencv/opencv_extra/raw/master/testdata/cv/ximgproc/model.yml.gz -O data/model.yml.gz
+cd data
+gunzip model.yml.gz
+```
+
+3. Ensure that [PyCall](https://github.com/JuliaPy/PyCall.jl) is appropriately setup (perhaps with a conda environment named "mypyenv") and that the following dependencies are met:
+ - pytorch
+ - opencv
+
+4. Run the following command to begin parsing the SIVAL-deep dataset into the `data` folder:
+
+```bash
+conda activate mypyenv
+julia --project sival_deep_pipeline.jl
+```
 
 ## Hyperparameter Settings
 
