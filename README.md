@@ -48,6 +48,8 @@ Where to download each of the datasets used in our paper.
  - **Elephant, Fox, and Tiger**: Downloaded from: http://www.cs.columbia.edu/~andrews/mil/datasets.html
  - **MNIST-bags**: This dataset is derived from: https://github.com/AMLab-Amsterdam/AttentionDeepMIL
  - **SIVAL**: Bags and labels are downloaded from: https://www.cs.wustl.edu/~sg/accio/SIVAL.html
+   - If the link above doesn't work for some reason the dataset is mirrored at: https://drive.google.com/file/d/1CE7NBfOgE6l3oA-TVdWCQV3FEpZqLlt3/view?usp=sharing
+   - If using the SIVAL dataset please cite: Rahmani, Rouhollah, et al. "Localized content based image retrieval." Proceedings of the 7th ACM SIGMM international workshop on Multimedia information retrieval. 2005.
 
 ## Hyperparameter Settings
 
