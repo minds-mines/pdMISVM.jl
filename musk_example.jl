@@ -4,6 +4,7 @@ using DataFrames
 using Random
 using CSV
 using CategoricalArrays
+using DrWatson
 
 include("src/pdMISVMClassifier.jl")
 
@@ -11,7 +12,7 @@ Random.seed!(42)
 
 function load_musk()
     # Load the musk dataset from UCI
-    musk_df = CSV.read("musk2.data", DataFrame, header=false)
+    musk_df = CSV.read(datadir("musk2.data"), DataFrame, header=false)
 # Convert integer columns to float for normalization
     cols = 3:168
     cols2float = names(musk_df)[cols]
