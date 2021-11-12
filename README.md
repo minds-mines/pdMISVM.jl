@@ -1,10 +1,10 @@
 # pdMISVM.jl
 
-This repository contains the reproducibility information for the 2021 ICDM paper titled: "A Linear Primal-Dual Multi-Instance SVM for Big Data Classifications". 
+This repository contains the reproducibility information for the 2021 ICDM paper titled: "A Linear Primal-Dual Multi-Instance SVM for Big Data Classifications". If you have any issues running this code please open a GitHub issue [here](https://github.com/minds-mines/pdMISVM.jl/issues).
 
 [![A Linear Primal-Dual Multi-Instance SVM for Big Data Classifications](/images/pdmisvm-thumbnail.png)](https://www.youtube.com/watch?v=dB8R9Qxlsjw)
 
-If you have any issues running this code please open a GitHub issue [here](https://github.com/minds-mines/pdMISVM.jl/issues). If you find this code useful please consider citing the following:
+If you find this code useful please consider citing the following:
 
 ```bibtex
 TODO
